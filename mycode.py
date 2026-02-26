@@ -8,8 +8,10 @@ dic = pd.DataFrame({
     "Lname":["Dalai","Folks","Si"]
 })
 
+dic.loc[len(dic)] = ["Alice","Young"]
+
 dir = "data"
 os.makedirs(dir,exist_ok=True)
 
 
-dic.to_csv("mydata.csv")
+dic.to_csv("data/mydata.csv")
