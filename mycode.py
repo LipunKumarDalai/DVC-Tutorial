@@ -9,6 +9,7 @@ dic = pd.DataFrame({
 })
 
 dic.loc[len(dic)] = ["Alice","Young"]
+dic.loc[len(dic)] = ["Viola","Young"]
 
 dir = "data"
 os.makedirs(dir,exist_ok=True)
